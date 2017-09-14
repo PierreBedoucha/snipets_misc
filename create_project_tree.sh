@@ -3,6 +3,8 @@
 echo "Package and distribution management" > setup.py
 echo "Requirements dependencies: specify the dependencies required to contribute to the project: testing, building, and generating documentation" > requirements.txt
 mkdir data
+mkdir data/input
+mkdir data/output
 mkdir docs
 echo "Package reference documentation" > docs/conf.py
 echo "Package reference documentation" > docs/index.rst
