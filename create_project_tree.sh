@@ -14,6 +14,7 @@ mkdir tests
 echo "Package integration and unit tests. from .context import sample" > tests/test_basic.py
 echo "Package integration and unit tests. from .context import sample" > tests/test_advanced.py
 
+touch /test/context.py
 cat >/test/context.py <<EOL
 line 1, import os
 line 2, import sys
@@ -22,6 +23,7 @@ line 4,
 line 5, import sample 
 EOL
 
+touch /Makefile
 cat >/Makefile <<EOL
 line 1, init:
 line 2,     pip install -r requirements.txt
