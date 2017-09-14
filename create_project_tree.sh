@@ -14,7 +14,7 @@ mkdir tests
 echo "Package integration and unit tests. from .context import sample" > tests/test_basic.py
 echo "Package integration and unit tests. from .context import sample" > tests/test_advanced.py
 
-cat >/tests/context.py <<EOL
+cat >tests/context.py <<EOL
 line 1, import os
 line 2, import sys
 line 3, sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -22,7 +22,7 @@ line 4,
 line 5, import sample 
 EOL
 
-cat >/Makefile <<EOL
+cat >Makefile <<EOL
 line 1, init:
 line 2,     pip install -r requirements.txt
 line 3,
